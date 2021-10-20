@@ -27,3 +27,13 @@ Route::get('/post', function(){
 Route::get('/admin/product',function(){
     return "Trang quản lý sản phẩm";
 });
+
+// Định tuyến có tham số
+
+Route::get('post/{id}', function($id){
+    return $id;
+});
+
+Route::get('post/{cat_id}/page/{page}', function($cat_id,$page){
+    return $cat_id.'-'.$page;
+});
