@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Định tuyến cơ bản
+
+Route::get('/post', function(){
+    return "Đây là trong bài viết";
+});
+
+Route::get('/admin/product',function(){
+    return "Trang quản lý sản phẩm";
+});
